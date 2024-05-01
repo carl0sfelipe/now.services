@@ -34,7 +34,7 @@ cd now.services
 npm install
 ng serve
 Navigate to http://localhost:4200/ to view the app. The app will automatically reload if you modify any of the source files.
-
+```
 ## Contributing
 Contributions are welcome! Please feel free to fork the repository, make changes, and submit a pull request.
 
