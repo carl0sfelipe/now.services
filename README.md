@@ -1,37 +1,42 @@
-# Angular
+# GitHub Profile Viewer
 
-This directory is a brief example of an [Angular](https://angular.io/) app that can be deployed to Vercel with zero configuration.
+## Overview
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.1.3.
+This Angular application, **GitHub Profile Viewer**, showcases the latest six repositories updated on a user's GitHub profile. It features a dynamic user profile switcher allowing users to view repositories from different GitHub accounts. The project is currently live and can be accessed at [now.service](https://now.service).
 
-## Deploy Your Own
+## Features
 
-Deploy your own Angular project with Vercel.
+- **Dynamic Repository Display**: Automatically fetches and displays the latest six repositories from the specified GitHub profile.
+- **Profile Switcher**: Users can enter a GitHub username to view repositories from different profiles.
+- **Responsive Design**: Optimized for various device sizes.
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/vercel/vercel/tree/main/examples/angular&template=angular)
+## What I Learned
 
-_Live Example: https://angular-template.vercel.app_
+Developing this project provided me with comprehensive learning experiences:
 
-## Development server
+- **Angular Framework**: Enhanced my understanding of Angular's architecture, including components, services, and module interaction.
+- **API Integration**: Improved skills in integrating external APIs, like the GitHub API, and handling asynchronous data fetching and error handling.
+- **Component Communication**: Learned how to manage state and props to enable interaction between components.
+- **Responsive CSS**: Developed a better grasp of CSS Grid and Flexbox to ensure the application is responsive across different devices and screen sizes.
+- **Deployment Techniques**: Gained insights into the deployment process on Vercel, focusing on continuous integration and deployment strategies.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Live Demo
 
-## Code scaffolding
+To see the application in action, visit [GitHub Profile Viewer Live](https://now.service).
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Running Locally
 
-## Build
+To run the application on your local machine:
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+```bash
+git clone https://github.com/carl0sfelipe/now.services.git
+cd now.services
+npm install
+ng serve
+Navigate to http://localhost:4200/ to view the app. The app will automatically reload if you modify any of the source files.
 
-## Running unit tests
+## Contributing
+Contributions are welcome! Please feel free to fork the repository, make changes, and submit a pull request.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## License
+This project is released under the MIT License.
