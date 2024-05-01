@@ -7,7 +7,9 @@ import { HeaderComponent } from './header/header.component';
 import { SocialsComponent } from './socials/socials.component';
 import { UserInputComponent } from './user-input/user-input.component';
 import { FormsModule } from '@angular/forms';
-import { GithubService } from './github.service'; // Verifique o caminho correto
+import { GithubService } from './github.service';
+import { MainComponent } from './main/main.component';
+import { RepoListComponent } from './repo-list/repo-list.component'; // Verifique o caminho correto
 
 
 @NgModule({
@@ -15,7 +17,9 @@ import { GithubService } from './github.service'; // Verifique o caminho correto
     AppComponent,
     HeaderComponent,
     SocialsComponent,
-    UserInputComponent
+    UserInputComponent,
+    MainComponent,
+    RepoListComponent
   ],
   imports: [
     BrowserModule,

@@ -1,5 +1,4 @@
-// src/app/components/user-input.component.ts
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
 import { GithubService } from '../github.service';
 
 @Component({
@@ -11,6 +10,7 @@ import { GithubService } from '../github.service';
 })
 export class UserInputComponent {
   username: string = '';
+  @Output() reposUpdated = new EventEmitter<any[]>();
 
   constructor(private githubService: GithubService) {}
 
@@ -18,8 +18,12 @@ export class UserInputComponent {
     this.githubService.fetchUserRepos(this.username).subscribe({
       next: (repos) => {
         console.log(repos);
+        this.reposUpdated.emit(repos);  // Emite os dados para o componente principal
       },
-      error: (error) => console.error('Erro ao buscar repositórios:', error)
+      error: (error) => {
+        console.error('Erro ao buscar repositórios:', error);
+        this.reposUpdated.emit([]);  // Emite array vazio em caso de erro
+      }
     });
   }
 }
