@@ -3,13 +3,11 @@ import { GithubService } from '../github.service';
 
 @Component({
   selector: 'app-user-input',
-  template: `
-    <input type="text" [(ngModel)]="username">
-    <button (click)="fetchRepos()">Buscar Repositórios</button>
-  `
+  templateUrl: './user-input.component.html',
+  styleUrls: ['./user-input.component.css']
 })
 export class UserInputComponent {
-  username: string = '';
+  username: string = 'carl0sfelipe';
   @Output() reposUpdated = new EventEmitter<any[]>();
 
   constructor(private githubService: GithubService) {}

@@ -1,0 +1,32 @@
+/* styles.css */
+input[type="text"] {
+    width: 250px;
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    transition: border-color 0.3s ease-in-out;
+  }
+  
+  input[type="text"]:focus {
+    border-color: #008f5f;
+    outline: none;
+  }
+  
+  button {
+    padding: 10px 15px;
+    background-color: #006443;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    margin-left: 16px;
+  }
+  
+  button:hover {
+    background-color: #004b32;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+  
