@@ -2,7 +2,7 @@
 
 ## Overview
 
-This Angular application, **GitHub Profile Viewer**, showcases the latest six repositories updated on a user's GitHub profile. It features a dynamic user profile switcher allowing users to view repositories from different GitHub accounts. The project is currently live and can be accessed at [now.service](https://now.services).
+This Angular application, **GitHub Profile Viewer**, showcases the latest six repositories updated on a user's GitHub profile. It features a dynamic user profile switcher allowing users to view repositories from different GitHub accounts. The project is currently live and can be accessed at [now.services](https://now.services).
 
 ## Features
 
