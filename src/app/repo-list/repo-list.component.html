@@ -1,1 +1,4 @@
-<p>repo-list works!</p>
+<div class="card-container" *ngFor="let repo of repos" class="repo-item">
+    <p class="card" >{{ repo.name }} - <a href="{{ repo.html_url }}" target="_blank">{{ repo.html_url }}</a></p>
+  </div>
+  
